@@ -12,7 +12,7 @@ media = soma / 4
 
 print(" = EXIBINDO NOTAS = ")
 for indice, nota in enumerate (vetor_nota, start=1):
-    print(f '{indice}º: {nota}')
+    print(f'{indice}º: {nota}')
     
 if media >= 7:
     resultado = "Aprovado"

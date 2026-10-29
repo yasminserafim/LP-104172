@@ -6,7 +6,7 @@ vetor_nota = []
 for i in range(4):
     nota = float(input("Digite sua nota: "))
     vetor_nota.append(nota)
-    
+
 soma = sum(vetor_nota)
 media = soma / 4
 maior_nota = max(vetor_nota)

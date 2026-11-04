@@ -33,8 +33,8 @@ while True:
             else:
                 lista_codigo.append(codigo)
                 print("Codigo cadastrado com sucesso.")
-            codigo_nome = [nome_sobrenome, codigo]
-            lista_paciente.append(codigo_nome)
+                codigo_nome = [nome_sobrenome, codigo]
+                lista_paciente.append(codigo_nome)
             input("\nPressione ENTER para continuar...")
         case 2:
             print("=== LISTAR PACIENTES ===")
@@ -45,19 +45,20 @@ while True:
             input("\nPressione ENTER para continuar...")
         case 3:
             print('=== ATUALIZAR PACIENTE ===')
-            codigo = int(input("Qual paciente deseja atualizar? "))
-            if codigo in lista_codigo:
-                posicao = lista_codigo.index(codigo)
+            codigo = int(input("Qual paciente deseja atualizar? (Digite o codigo): "))
+            if codigo in lista_paciente:
+                posicao = lista_paciente.index(codigo)
                 novo = input("Novo nome: ")
-                lista_nome[posicao] = novo
+                lista_paciente.remove(nome_sobrenome)
+                lista_nome[posicao] = paciente
                 print("Paciente alterado com sucesso.")
             else:
                 print('Paciente não encontrado.')
             input("\nPressione ENTER para continuar...")
         case 4:
-            print('\n=== REMOVER PRODUTO ===')
+            print('\n=== REMOVER PACIENTE ===')
             nome = input('Qual paciente deseja remover? ')
-            codigo = int(input('Qual paciente deseja remover? '))
+            codigo = int(input('Qual o codigo do paciente que deseja remover? '))
             if paciente in lista_paciente:
                 lista_paciente.remove(nome)
                 print("Paciente excluído.")

@@ -14,4 +14,4 @@ numero = int(input("Digite um número: "))
 resultado = verificar_par_impar(numero)
 
 print('\n= EXIBINDO DADOS =')
-print(f'O número: {numero é {resultado}}')
+print(f'O número: {numero} é {resultado}')
